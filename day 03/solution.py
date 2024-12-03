@@ -21,7 +21,6 @@ def q2():
     return t
 
 
-
 if __name__ == '__main__':
     from time import perf_counter as pc
 
