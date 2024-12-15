@@ -1,7 +1,7 @@
 def q1():
     with open('input.txt', 'r') as f:
-        input = f.read().splitlines()
-    l1, l2 = zip(*[(int(line.split()[0]), int(line.split()[-1])) for line in input])
+        data = f.read().splitlines()
+    l1, l2 = zip(*[(int(line.split()[0]), int(line.split()[-1])) for line in data])
     t = 0
     for p1, p2 in zip(sorted(l1), sorted(l2)):
         t += abs(p1 - p2)
@@ -10,8 +10,8 @@ def q1():
 
 def q2():
     with open('input.txt', 'r') as f:
-        input = f.read().splitlines()
-    l1, l2 = zip(*[(int(line.split()[0]), int(line.split()[-1])) for line in input])
+        data = f.read().splitlines()
+    l1, l2 = zip(*[(int(line.split()[0]), int(line.split()[-1])) for line in data])
     t = 0
     for p1 in l1:
         t += l2.count(p1) * p1

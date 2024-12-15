@@ -31,8 +31,8 @@ def q1():
     pos = 0
     direction = ''
     with open('input.txt', 'r') as f:
-        input = f.read().splitlines()
-        for i, line in enumerate(input):
+        data = f.read().splitlines()
+        for i, line in enumerate(data):
             for j, ch in enumerate(line):
                 grid[j + 1j * i] = ch
                 if ch not in '#.':
@@ -60,8 +60,8 @@ def q2():
     initial = 0
     direction = ''
     with open('input.txt', 'r') as f:
-        input = f.read().splitlines()
-        for i, line in enumerate(input):
+        data = f.read().splitlines()
+        for i, line in enumerate(data):
             for j, ch in enumerate(line):
                 grid[j + 1j * i] = ch
                 if ch not in '#.':

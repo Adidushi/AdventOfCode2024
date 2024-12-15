@@ -6,8 +6,8 @@ def q1():
     anti_nodes = set()
     grid = dict()
     with open('input.txt', 'r') as f:
-        input = f.read().splitlines()
-        for j, line in enumerate(input):
+        data = f.read().splitlines()
+        for j, line in enumerate(data):
             for i, ch in enumerate(line):
                 coord = complex(i, j)
                 grid[coord] = ch
@@ -31,8 +31,8 @@ def q2():
     anti_nodes = set()
     grid = dict()
     with open('input.txt', 'r') as f:
-        input = f.read().splitlines()
-        for j, line in enumerate(input):
+        data = f.read().splitlines()
+        for j, line in enumerate(data):
             for i, ch in enumerate(line):
                 coord = complex(i, j)
                 grid[coord] = ch

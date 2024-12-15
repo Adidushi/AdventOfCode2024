@@ -25,14 +25,14 @@ def check_tolerate(rep: List[int]):
 
 def q1():
     with open('input.txt', 'r') as f:
-        input = f.read().splitlines()
-    return sum(check_report(list(map(int, r.split()))) for r in input)
+        data = f.read().splitlines()
+    return sum(check_report(list(map(int, r.split()))) for r in data)
 
 
 def q2():
     with open('input.txt', 'r') as f:
-        input = f.read().splitlines()
-    return sum(check_tolerate(list(map(int, r.split()))) for r in input)
+        data = f.read().splitlines()
+    return sum(check_tolerate(list(map(int, r.split()))) for r in data)
 
 
 if __name__ == '__main__':
